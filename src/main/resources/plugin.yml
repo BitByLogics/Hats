@@ -1,0 +1,8 @@
+name: Hats
+version: '${project.version}'
+main: net.bitbylogic.hats.Hats
+api-version: '1.20'
+authors: [ BitByLogic ]
+commands:
+  hats:
+    description: "Used to reload the configuration file and loaded hats, or give hats!"

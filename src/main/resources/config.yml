@@ -1,0 +1,42 @@
+Combine-Settings:
+  # Return the original helmet when separating with grindstone
+  Return-On-Separate: false
+  Lore:
+    - "%hat-lore%"
+    - ""
+    - "&9%armor-type%"
+
+Messages:
+  No-Permission: "&cYou do not have permission to use this command."
+  Successfully-Reloaded: "&aSuccessfully reloaded config and hats!"
+  Give-Command:
+    Missing-ID: "&cYou must provide a hat ID!"
+    Invalid-ID: "&cYou must provide a valid hat ID!"
+    Invalid-Player: "&cYou must provide an online player!"
+    Success: "&aSuccessfully gave %player% a %hat% hat!"
+
+Hats:
+  Example:
+    # Chance for a wondering trader to have this hat as a trade.
+    Wandering-Trader-Chance: 0.17
+    # How many levels it costs to combine with a helmet
+    Combine-Level-Cost: 5
+    Item:
+      Material: "CARVED_PUMPKIN"
+      Name: "&cExample Hat"
+      Model-Data: 1
+      Lore:
+        - "&cExample hat lore!"
+    # This is a list of the valid entity types that
+    # can drop this hat, along with the chance.
+    # Chance is rolled as a double, so 0.17 would be 0.17%
+    # FORMAT: ENTITY_TYPE:<DOUBLE>CHANCE
+    Drop-Chances:
+      - "ZOMBIE:0.17"
+      - "HUSK:0.17"
+      - "SKELETON:0.17"
+      - "WITHER_SKELETON:0.17"
+      - "STRAY:0.17"
+      - "BOGGED:0.17"
+      - "PIGLIN:0.17"
+      - "ZOMBIFIED_PIGLIN:0.17"
